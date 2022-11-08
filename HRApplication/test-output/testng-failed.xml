@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hrapp.testsuite.ValidLogin">
+      <class name="com.hrapp.testsuite.AttendanceReport">
         <methods>
           <include name="finalstep"/>
           <include name="loginToApp"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.hrapp.testsuite.ValidLogin -->
+      </class> <!-- com.hrapp.testsuite.AttendanceReport -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
