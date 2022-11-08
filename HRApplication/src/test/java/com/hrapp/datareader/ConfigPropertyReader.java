@@ -9,10 +9,10 @@ public class ConfigPropertyReader {
 	
 	public ConfigPropertyReader() {
 		try {
-			File src = new File("./Configuration/config.property");
-			FileInputStream fis = new FileInputStream(src);
+			
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+"/src/test/resources/Configuration/config.property");
 			pro = new Properties();
-			pro.load(fis);
+			pro.load(ip);
 			
 		}
 		catch(Exception e){
@@ -30,5 +30,9 @@ public class ConfigPropertyReader {
 	
 	public String getPassword() {
 		return pro.getProperty("password");
+	}
+	
+	public String getReportPath() {
+		return pro.getProperty("reportPath");
 	}
 }
